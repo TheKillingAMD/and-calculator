@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="btn">btn</string>
+    <string name="_0">0</string>
+    <string name="dot">dot</string>
+    <string name="todo">TODO</string>
+    <string name="history">History</string>
+    <string name="rad">Rad</string>
+    <string name="title_activity_main_page">Main_page</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

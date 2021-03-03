@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="353dp"
+        android:layout_marginRight="353dp"
+        android:text="@string/rad"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/btnHistory"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_history" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCalculations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="50sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txtResults"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="50sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnsin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_sin"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/btncos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_cos" />
+
+            <ImageButton
+                android:id="@+id/btntan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_tan" />
+
+            <ImageButton
+                android:id="@+id/btnsqrt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_root" />
+
+            <ImageView
+                android:id="@+id/btne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/dark_e" />
+
+            <ImageView
+                android:id="@+id/btnexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/dark_exp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_log"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/btnln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_ln" />
+
+            <ImageButton
+                android:id="@+id/btnpower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_power" />
+
+            <ImageButton
+                android:id="@+id/btnpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_pi" />
+
+            <ImageView
+                android:id="@+id/btnphi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/dark_phi" />
+
+            <ImageView
+                android:id="@+id/btnfactorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/dark_factorial" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/btnClear"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/dot"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_clear" />
+
+            <ImageButton
+                android:id="@+id/btndelete"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_delete" />
+
+            <ImageButton
+                android:id="@+id/btnpercentage"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_percent" />
+
+            <ImageButton
+                android:id="@+id/btndiv"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_divide" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_7" />
+
+            <ImageButton
+                android:id="@+id/btn8"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_8" />
+
+            <ImageButton
+                android:id="@+id/btn9"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_9" />
+
+            <ImageButton
+                android:id="@+id/btnmul"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_multiply" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/btn4"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_4" />
+
+            <ImageButton
+                android:id="@+id/btn5"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_5" />
+
+            <ImageButton
+                android:id="@+id/btn6"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_6" />
+
+            <ImageButton
+                android:id="@+id/btnsub"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_minus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_1" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_2" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_3" />
+
+            <ImageButton
+                android:id="@+id/btnadd"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_plus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btndot"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_dot" />
+
+            <ImageButton
+                android:id="@+id/btn0"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_0" />
+
+            <ImageButton
+                android:id="@+id/btnbracket"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#212121"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_bracket" />
+
+            <ImageButton
+                android:id="@+id/btnequal"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFBE00"
+                android:contentDescription="@string/btn"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dark_equal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
